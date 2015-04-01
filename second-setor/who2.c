@@ -32,6 +32,7 @@ int main(int argc, char const *argv[])
 displays contents of the struct in human form 
 */
 void show_info(struct utmp * utbufp) {
+	
 	// if (utbufp->ut_type != USER_PROCESS) //user only 
 	// 	return; //to do why i coulc not get current user and just get some system inline user
 	printf("%-8.8s", utbufp->ut_user); //the username
